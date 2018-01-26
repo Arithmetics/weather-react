@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class SelectForm extends React.Component {
+
   render(){
     return (
       <div>
         <input placeholder="Portland, Oregon" />
         <br />
         <button
-          onClick={this.props.onClick.bind(null,"Portland")}
-        >
+          onClick={this.props.onClick.bind(null,"Portland")}>
           Get Weather!
         </button>
       </div>

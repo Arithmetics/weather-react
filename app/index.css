@@ -35,6 +35,14 @@ body {
   color: white;
 }
 
+.temp {
+  color: white;
+}
+
+.forecast{
+  background-color: white;
+}
+
 input {
   height: 30px;
   width: 200px;
