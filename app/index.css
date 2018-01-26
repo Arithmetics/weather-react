@@ -1,3 +1,60 @@
 body {
-  background: green;
+  margin: 0 auto;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-color: #071419;
+}
+
+.navheader {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: white;
+  display: inline-block;
+}
+
+.navright {
+  float: right;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.home {
+  height: 661px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner {
+  text-align: center;
+  color: white;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  margin: 5px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  background: url('./images/weather_background.jpg')  no-repeat;
+  background-size: cover;
+  background-position: -280px 0px;
 }
