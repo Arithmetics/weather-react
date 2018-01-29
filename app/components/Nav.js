@@ -20,7 +20,7 @@ class Nav extends React.Component {
           Weather App w/React!
         </h1>
         <div className="navright">
-          <SelectForm onClick={this.logCity}/>
+
         </div>
       </div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
 import Home from './Home';
-import Temp from './Temp';
+import Forecast from './Forecast';
 import { BrowserRouter,
          Route,
          Switch,
@@ -18,7 +18,7 @@ class App extends React.Component {
           <Nav />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/temp" component={Temp} />
+            <Route path="/forecast" component={Forecast}  />
           </Switch>
         </div>
       </BrowserRouter>

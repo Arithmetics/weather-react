@@ -1,10 +1,11 @@
 import React from 'react';
+import fetchCityForecast from '../utils/api';
 
 class Forecast extends React.Component {
   render(){
     return(
       <div className="forecast">
-        {this.props.forecast.weather[0].description}
+        <h1>Forecast Page</h1>
       </div>
     )
   }

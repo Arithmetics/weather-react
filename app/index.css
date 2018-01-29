@@ -8,6 +8,7 @@ body {
   height: 100px;
   display: block;
   background-color: #071419;
+  margin: none;
 }
 
 .navheader {
@@ -31,6 +32,7 @@ body {
 }
 
 .banner {
+  margin: 0;
   text-align: center;
   color: white;
 }
@@ -58,11 +60,10 @@ button {
   margin: 5px;
 }
 
-.container {
+.home {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0;
   background: url('./images/weather_background.jpg')  no-repeat;
   background-size: cover;
-  background-position: -280px 0px;
 }
