@@ -104,6 +104,12 @@ button {
   height: 30px;
 }
 
+.b {
+  display: inline-block;
+}
+
+
+
 .home {
   max-width: 1600px;
   margin: 0 auto;

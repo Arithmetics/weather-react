@@ -35,6 +35,27 @@ class Forecast extends React.Component {
     }.bind(this));
   }
 
+  componentWillReceiveProps(nextProps){
+    const city = queryString.parse(nextProps.location.search).city;
+    fetchFiveDayForecast(city).then(function(res){
+      console.log(res);
+      if(res.message==="city not found"){
+        return this.setState(function(){
+          return {
+            error: "City not found",
+            loading: false
+          }
+        })
+      }
+      this.setState(function(){
+        return {
+          forecast: res,
+          loading: false
+        }
+      })
+    }.bind(this));
+  }
+
 
 
   render(){
