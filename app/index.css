@@ -72,7 +72,7 @@ button {
   border-style: solid;
   border-radius: 5px;
   width: 150px;
-  height: 250px;
+  height: 200px;
   margin: 20px;
   padding: 5px;
   box-shadow: 3px 3px 5px 6px #ccc;
@@ -80,6 +80,10 @@ button {
 
 .weathercard:hover {
   box-shadow: 3px 3px 5px 6px #8e418a;
+}
+
+.imageholder {
+  height: 30px;
 }
 
 .home {

@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Arithmetics/weather-react#readme",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "moment": "^2.20.1",
     "prop-types": "^15.6.0",
     "query-string": "^5.0.1",
     "react": "^16.2.0",
