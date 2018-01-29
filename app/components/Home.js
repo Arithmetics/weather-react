@@ -20,7 +20,6 @@ class Home extends React.Component {
         selectedCity: city
       }
     });
-    console.log(this.state);
   }
 
   render(){

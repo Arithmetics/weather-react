@@ -41,6 +41,11 @@ class Forecast extends React.Component {
     const forecast = this.state.forecast;
     const loading = this.state.loading;
     const error = this.state.error;
+    let city = "";
+    if(this.state.forecast){
+      city = this.state.forecast.city.name;
+    }
+
 
     if(loading === true){
       return <p>Loading</p>
@@ -53,14 +58,16 @@ class Forecast extends React.Component {
         </div>
       )
     }
-    
+
     return(
       <div className="forecast">
-        <h1>5 Day/3 hour Forecast for {this.state.forecast.city.name}</h1>
+        <h1>5 Day/3 hour Forecast for {city}</h1>
           {this.state.forecast.list.map(function(day){
             return(
               <WeatherDay
                 key={day.dt}
+                city={city}
+                fullForecast={day}
                 iconName={day.weather[0].icon}
                 time={day.dt_txt}
                 description={day.weather[0].description}

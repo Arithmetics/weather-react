@@ -82,6 +82,24 @@ button {
   box-shadow: 3px 3px 5px 6px #8e418a;
 }
 
+.weatherdetail {
+  text-align: center;
+}
+
+.weatherdetail img {
+  width: 300px;
+  margin: 20px;
+}
+
+.weatherdetail ul {
+  list-style: none;
+  font-size: 30px;
+}
+
+.weatherdetail li {
+  margin: 10px;
+}
+
 .imageholder {
   height: 30px;
 }
