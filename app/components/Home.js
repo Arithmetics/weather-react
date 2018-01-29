@@ -27,17 +27,19 @@ class Home extends React.Component {
     return(
       <div className="home">
         <h1 className="banner">Enter a City, State</h1>
-        <SelectForm onSubmit={this.selectCity}/>
+        <br />
+        <SelectForm onChange={this.selectCity}/>
         <br />
         <Link
           to={{
             pathname: '/forecast',
             search: `?city=${this.state.selectedCity}`
           }}>
-          Query
+          <button>
+            Get Weather
+          </button>
         </Link>
       </div>
-
     )
   }
 }

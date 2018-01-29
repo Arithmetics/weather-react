@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
+
 class SelectForm extends React.Component {
   constructor(props){
     super(props);
@@ -11,30 +12,27 @@ class SelectForm extends React.Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event){
     const value = event.target.value;
-    this.setState(function(){
-      return {
+    this.setState(
+      {
         city: value
+      }, () => {
+        this.props.onChange(
+          this.state.city
+        )
       }
-    })
-  }
-
-  handleSubmit(event){
-    event.preventDefault();
-    this.props.onSubmit(
-      this.state.city
     )
   }
+
+
 
   render(){
     return (
       <div>
-
-        <form onSubmit={this.handleSubmit}>
+        <form>
           <input
             id="cityentry"
             placeholder="Portland, Oregon"
@@ -44,11 +42,6 @@ class SelectForm extends React.Component {
             onChange={this.handleChange}
           />
           <br />
-          <button
-            type='submit'
-            disabled={!this.state.city}>
-            Update City State
-          </button>
         </form>
       </div>
     )

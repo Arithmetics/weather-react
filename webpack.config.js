@@ -12,7 +12,8 @@ module.exports = {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
       { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
-      { test: /\.jpg$/, use: 'file-loader'}
+      { test: /\.jpg$/, use: 'file-loader'},
+      { test: /\.svg$/, use: 'file-loader'}
     ]
   },
   devServer: {
