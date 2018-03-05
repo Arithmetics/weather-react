@@ -1,7 +1,7 @@
 # weather-react
 Weather api application built as my first React JS Project.
 
-(https://i.imgur.com/RO9eoSJ.png)
+![Screenshot](https://i.imgur.com/RO9eoSJ.png)
 
 Build this as an assingment given here:
 
