@@ -3,7 +3,7 @@ Weather api application built as my first React JS Project.
 
 ![Screenshot](https://i.imgur.com/RO9eoSJ.png)
 
-Build this as an assingment given here:
+Build this as an assignment given here:
 
 https://github.com/tylermcginnis/react-fundamentals-curriculum
 
